@@ -18,7 +18,7 @@ Este é um desafio prático que desenvolvi em Flutter para calcular o Índice de
 
 | Tela Inicial | Tela de Cálculo |
 |--------------|-----------------|
-| ![](docs/tela_inicial.png) | ![](docs/tela_calculo.png) |
+| ![](docs/tela_calculo.png) | ![](docs/tela_inicial.png) |
 
 ---
 
