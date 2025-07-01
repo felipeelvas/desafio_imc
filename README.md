@@ -16,10 +16,9 @@ Este é um desafio prático que desenvolvi em Flutter para calcular o Índice de
 
 ## 📸 Prévia
 
-<!-- Substitua os caminhos pelas suas capturas reais se quiser -->
 | Tela Inicial | Tela de Cálculo |
-|--------------|----------------|
-| ![](docs/home.png) | ![](docs/imc_screen.png) |
+|--------------|-----------------|
+| ![](docs/tela_inicial.png) | ![](docs/tela_calculo.png) |
 
 ---
 
