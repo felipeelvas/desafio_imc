@@ -1,30 +1,21 @@
-# 📱 Desafio IMC com Flutter
+# Desafio IMC — Flutter
 
-Este é um desafio prático que desenvolvi em Flutter para calcular o Índice de Massa Corporal (IMC), com foco em boas práticas de layout, navegação e controle de estado.
+App Flutter para cálculo de **IMC** com histórico, feedback visual e animações leves.
 
-![Banner do App](docs/banner.png) <!-- Substitua pelo caminho correto da imagem, se desejar -->
+## 🎯 Objetivo
+Permitir que o usuário calcule o IMC rapidamente, visualize a classificação (OMS) e acompanhe um histórico local de resultados.
 
 ## ✨ Funcionalidades
+- Cálculo de IMC com classificação (Abaixo do peso / Normal / Sobrepeso / Obesidade I, II, III)
+- Histórico local (lista com data/hora e resultado)
+- Feedback visual (cores, ícones e animações)
+- Validação de entrada (altura/peso)
+- Layout responsivo (mobile e web)
 
-- 🧮 Cálculo do IMC com base no peso e altura informados
-- ✅ Classificação do IMC: abaixo do peso, normal, sobrepeso, obesidade I, II e III
-- 📜 Histórico dos cálculos com data e hora
-- 🌐 Formatação de data com a biblioteca `intl`
-- 📲 Interface amigável com campos de entrada e botões personalizados
+## 🖼️ Screenshots
+Veja a seção **“Guia de Capturas”** ao final para padronizar e gerar imagens/GIFs.
 
----
-
-## 📸 Prévia
-
-| Tela Inicial | Tela de Cálculo |
-|--------------|-----------------|
-| ![](docs/tela_calculo.png) | ![](docs/tela_inicial.png) |
-
----
-
-## 🚀 Como rodar o projeto
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/felipeelvas/desafio_imc.git
-   cd desafio_imc
+## 🧪 Testes
+```bash
+flutter test
+dart analyze
