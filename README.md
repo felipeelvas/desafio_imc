@@ -20,12 +20,8 @@ Veja a seção **“Guia de Capturas”** ao final para padronizar e gerar image
 flutter test
 dart analyze
 
-
-## 🚀 Como rodar
-````bash
-
+🚀 Como rodar
 flutter pub get
 flutter run
 # ou web
 flutter run -d chrome
-
