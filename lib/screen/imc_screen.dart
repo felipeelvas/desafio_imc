@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../models/pessoa.dart';
+import '../models/imc.dart';
 import 'package:intl/intl.dart';
 
 class ImcScreen extends StatefulWidget {
@@ -27,12 +27,12 @@ class _ImcScreenState extends State<ImcScreen> {
       return;
     }
 
-    final pessoa = Pessoa(peso: peso, altura: altura);
-    final imc = pessoa.calcularIMC();
-    final classificacao = pessoa.classificarIMC();
+    final imc = Imc(peso: peso, altura: altura);
+    final imcCalculo = imc.calcularIMC();
+    final classificacao = imc.classificarIMC();
     final dataHora = DateFormat('dd/MM/yyyy HH:mm').format(DateTime.now());
 
-    final resultado = 'IMC: ${imc.toStringAsFixed(2)} - $classificacao';
+    final resultado = 'IMC: ${imcCalculo.toStringAsFixed(2)} - $classificacao';
 
     setState(() {
       _resultado = resultado;
