@@ -33,7 +33,8 @@ class _LoginPageState extends State<LoginPage> {
                 Row(
                   children: [
                     Expanded(child: Container()),
-                    Expanded(flex: 8, child: Image.asset(AppImages.image2)),
+                    Expanded(flex: 100, child: Image.network('https://alimentacaoetreino.com/wp-content/uploads/2025/03/Como-calcular-o-IMC-.webp',
+                    scale: 3,)),
                     Expanded(child: Container()),
                   ],
                 ),

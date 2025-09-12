@@ -1,6 +1,8 @@
 import 'package:desafio_imc/utils/app_routes.dart';
 import 'package:flutter/material.dart';
 
+import '../shared/custon_drawer.dart';
+
 class MainPage extends StatefulWidget {
   const MainPage({super.key, required this.title});
 
@@ -22,6 +24,7 @@ class _MainpageState extends State<MainPage> {
         title: Text(widget.title),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
       ),
+      drawer: CustomDrawer(),
       body: Column(
         children: [
           Center(
