@@ -39,8 +39,10 @@ class CustomDrawer extends StatelessWidget {
                           leading: const Icon(Icons.calculate),
                           title: const Text('Calcular IMC'),
                           onTap: () {
-                            Navigator.pop(context);
-                            // Adicione a navegação para a tela de cálculo de IMC aqui
+                            Navigator.pushReplacement(
+                                context,
+                                MaterialPageRoute(builder: (context) => ImcScreen())
+                            );
                           },
                         ),
                         ListTile(

@@ -1,4 +1,4 @@
-import 'package:desafio_imc/utils/app_routes.dart';
+import 'package:desafio_imc/screen/imc_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../shared/custon_drawer.dart';
@@ -13,10 +13,6 @@ class MainPage extends StatefulWidget {
 }
 
 class _MainpageState extends State<MainPage> {
-  void _navegarParaImc() {
-    Navigator.of(context).pushNamed(AppRoutes.imc);
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,22 +22,49 @@ class _MainpageState extends State<MainPage> {
       ),
       drawer: CustomDrawer(),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        // crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Center(
-            child: ElevatedButton.icon(
-              icon: const Icon(Icons.calculate),
-              label: const Text('Calcular IMC'),
-              onPressed: () {
-                _navegarParaImc;
-              },
-              // onPressed: ,
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: 24,
-                  vertical: 16,
-                ),
-                textStyle: const TextStyle(fontSize: 18),
+          SizedBox(
+            width: double.infinity,
+            height: 120,
+            child: Card(
+              color: Theme.of(context).colorScheme.onPrimary,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(15),
               ),
+              margin: const EdgeInsets.all(20),
+              elevation: 5,
+              shadowColor: Colors.black,
+              child: Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: Text('Desafio IMC!',
+                style: Theme.of(context).textTheme.headlineMedium, textAlign: TextAlign.center,),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton.icon(
+                  icon: Icon(Icons.calculate, size: 32,),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                    MaterialPageRoute(builder: (BuildContext context) => const ImcScreen())
+                    );
+                  },
+                  label:  Text('Calcular IMC'),
+                  style: ElevatedButton.styleFrom(
+                    padding:  EdgeInsets.all(24),
+                    textStyle:  TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                    elevation: 5,
+                    shadowColor: Colors.black,
+                  ),
+                ),
+              ],
             ),
           ),
         ],

@@ -41,7 +41,9 @@
 //   );
 // }
 
+import 'package:desafio_imc/screen/imc_screen.dart';
 import 'package:desafio_imc/screen/login_page.dart';
+import 'package:desafio_imc/screen/main_page.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -64,7 +66,17 @@ class MyApp extends StatelessWidget {
           ),
         ),
       ),
-      home: const LoginPage(),
+
+      initialRoute: '/',
+      routes: {
+        '/': (_) => const LoginPage(),
+        '/main': (_) => const MainPage(title: 'Cálculo de IMC'),
+        '/imc': (_) => const ImcScreen(),
+      },
+
+      //fallback se nenhuma rota for encontrada
+      onUnknownRoute: (_) => MaterialPageRoute(builder: (_) => const LoginPage(),
+      )
     );
   }
 }

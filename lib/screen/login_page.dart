@@ -1,3 +1,4 @@
+import 'package:desafio_imc/screen/password_page.dart';
 import 'package:desafio_imc/shared/app_images.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
@@ -39,24 +40,6 @@ class _LoginPageState extends State<LoginPage> {
                   ],
                 ),
                 const SizedBox(height: 20),
-                Text(
-                  "Já tem cadastro?",
-                  style: TextStyle(
-                    fontSize: 26,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.white,
-                  ),
-                ),
-                const SizedBox(height: 10),
-                Text(
-                  "Faça seu login e make the change_",
-                  style: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w400,
-                    color: Colors.white,
-                  ),
-                ),
-                const SizedBox(height: 40),
                 Container(
                   width: double.infinity,
                   margin: const EdgeInsets.symmetric(horizontal: 30),
@@ -180,41 +163,69 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 const SizedBox(height: 20),
-                Expanded(child: Container()),
-                Container(
-                  width: double.infinity,
-                  margin: const EdgeInsets.symmetric(horizontal: 30),
-                  // color: Colors.green,
-                  height: 30,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "Esqueci minha senha",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w500,
-                      color: Colors.yellow,
+                Expanded(child: Container(
+
+                )),
+                Column(
+                  children: [
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => PasswordPage(),
+                          ),
+                        );
+                      },
+                      child: Text(
+                        "Esqueci minha senha",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.yellow,
+                        ),
+
+                      ),
+
                     ),
-                  ),
-                ),
-                Container(
-                  width: double.infinity,
-                  margin: const EdgeInsets.symmetric(horizontal: 30),
-                  height: 30,
-                  alignment: Alignment.center,
-                  child: Text(
-                    "Criar conta!",
-                    style: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w400,
-                      color: Colors.green,
+                    Text(
+                      "Não tem cadastro?",
+                      style: TextStyle(
+                        fontSize: 26,
+                        fontWeight: FontWeight.w700,
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
+                    const SizedBox(height: 10),
+                    Text(
+                      "Faça sua inscrição",
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400,
+                        color: Colors.white,
+                      ),
+                    ),
+                    const SizedBox(height: 40),
+                    Container(
+                      width: double.infinity,
+                      margin: const EdgeInsets.symmetric(horizontal: 30),
+                      height: 30,
+                      alignment: Alignment.center,
+                      child: Text(
+                        "Criar conta!",
+                        style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w400,
+                          color: Colors.green,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: 60),
+                  ],
                 ),
-                const SizedBox(height: 60),
               ],
             ),
-          ),
-        ),
+          ),      )
       ),
     );
   }

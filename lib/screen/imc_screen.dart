@@ -30,13 +30,13 @@ class _ImcScreenState extends State<ImcScreen> {
     final imc = Imc(peso: peso, altura: altura);
     final imcCalculo = imc.calcularIMC();
     final classificacao = imc.classificarIMC();
-    final dataHora = DateFormat('dd/MM/yyyy HH:mm').format(DateTime.now());
+    final data = DateFormat('dd/MM/yyyy').format(DateTime.now());
 
     final resultado = 'IMC: ${imcCalculo.toStringAsFixed(2)} - $classificacao';
 
     setState(() {
       _resultado = resultado;
-      _historico.insert(0, '[$dataHora] $resultado'); // adiciona no topo
+      _historico.insert(0, '[$data] $resultado'); // adiciona no topo
     });
   }
 
@@ -50,7 +50,18 @@ class _ImcScreenState extends State<ImcScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Cálculo de IMC')),
+      appBar: AppBar(title: const Text('Cálculo de IMC'),
+        leading: IconButton(
+          icon: Icon(
+            Icons.arrow_back,
+            size: MediaQuery.of(context).size.width * 0.06,
+            color: Theme.of(context).colorScheme.secondary,
+          ),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+      ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
