@@ -19,9 +19,18 @@ Este projeto foi desenvolvido como parte de um **desafio de estudos em Flutter/D
 
 ## 📸 Screenshots (exemplo)
 
-|                                  Login                         |                         Main                         |                         IMC                            |                                         menu                                         |      
-|----------------------------------------------------------------|------------------------------------------------------|--------------------------------------------------------|--------------------------------------------------------------------------------------|
-| ![Login](<img width="426" height="914" alt="image" src="https://github.com/user-attachments/assets/6050f73a-8b5b-476e-aa80-fc5c3e153c53" />) | ![Main](<img width="418" height="895" alt="image" src="https://github.com/user-attachments/assets/46051685-8390-486d-a0b1-3de2223bdbc8" />) | ![IMC]<img width="428" height="887" alt="image" src="https://github.com/user-attachments/assets/217759f4-406f-4a56-95de-0972f1f9d2af" />) | ![Menu](<img width="410" height="906" alt="image" src="https://github.com/user-attachments/assets/850a3812-ec6b-4111-9c13-51df79a22356" />) |
+|                                  Login                         | 
+|----------------------------------------------------------------|
+| ![Login](<img width="426" height="914" alt="image" src="https://github.com/user-attachments/assets/6050f73a-8b5b-476e-aa80-fc5c3e153c53" />) |
+|                                  Main                          |
+|----------------------------------------------------------------|
+| ![Main](<img width="418" height="895" alt="image" src="https://github.com/user-attachments/assets/46051685-8390-486d-a0b1-3de2223bdbc8" />) |
+|                                  IMC                           |
+|----------------------------------------------------------------|
+| ![IMC]<img width="428" height="887" alt="image" src="https://github.com/user-attachments/assets/217759f4-406f-4a56-95de-0972f1f9d2af" />) | 
+|                                  MENU                          |
+|----------------------------------------------------------------|
+| ![Menu](<img width="410" height="906" alt="image" src="https://github.com/user-attachments/assets/850a3812-ec6b-4111-9c13-51df79a22356" />) |
 
 *(adicione imagens em `/docs` ou use prints do app rodando)*
 
