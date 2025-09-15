@@ -34,7 +34,32 @@ Este projeto foi desenvolvido como parte de um **desafio de estudos em Flutter/D
 - [intl](https://pub.dev/packages/intl) — formatação de datas
 - [google_fonts](https://pub.dev/packages/google_fonts) — tipografia personalizada
 
+
 ---
 
-## 📂 Estrutura do Projeto
+## 🚀 Como executar
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/felipeelvas/desafio_imc.git
+   cd desafio_imc
+2. Instale as dependências:
+   ```bash
+   flutter pub get
+3. Execute o app:
+   ```bash
+   flutter run
+---
+
+## 📈 Próximos passos (roadmap)
+
+ - Persistir histórico em armazenamento local (shared_preferences ou hive)
+
+ - Validação de inputs com TextFormField e mensagens de erro
+
+ - Testes unitários para a lógica de cálculo do IMC
+
+ - Melhorias de UX (máscaras numéricas, feedback visual, animações)
+
+ - Dark mode 🌙
 
