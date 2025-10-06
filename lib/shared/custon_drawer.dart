@@ -1,4 +1,5 @@
 
+import 'package:desafio_imc/screen/imc_hive_page.dart';
 import 'package:desafio_imc/screen/imc_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -41,7 +42,7 @@ class CustomDrawer extends StatelessWidget {
                           onTap: () {
                             Navigator.pushReplacement(
                                 context,
-                                MaterialPageRoute(builder: (context) => ImcScreen())
+                                MaterialPageRoute(builder: (context) => ImcHivePage())
                             );
                           },
                         ),
@@ -75,34 +76,34 @@ class CustomDrawer extends StatelessWidget {
             padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 20),
             child: Column(
               children: [
-                InkWell(
-                  child: Container(
-                    padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
-                    child: Column(
-                      children: [
-                        Row(
-                          children: [
-                            const Icon(Icons.calculate, size: 30),
-                            const SizedBox(width: 10),
-                            const Expanded(
-                              child: Text(
-                                "Calcular IMC",
-                                style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ],
-                    ),
-                  ),
-                  onTap: () {
-                    Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(builder: (context) => ImcScreen())
-                    );
-                  },
-                ),
-                const Divider(),
+                // InkWell(
+                //   child: Container(
+                //     padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),
+                //     child: Column(
+                //       children: [
+                //         Row(
+                //           children: [
+                //             const Icon(Icons.calculate, size: 30),
+                //             const SizedBox(width: 10),
+                //             const Expanded(
+                //               child: Text(
+                //                 "Calcular IMC",
+                //                 style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                //               ),
+                //             ),
+                //           ],
+                //         ),
+                //       ],
+                //     ),
+                //   ),
+                //   onTap: () {
+                //     Navigator.pushReplacement(
+                //         context,
+                //         MaterialPageRoute(builder: (context) => ImcHivePage())
+                //     );
+                //   },
+                // ),
+                // const Divider(),
                 InkWell(
                   child: Container(
                     padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 8),

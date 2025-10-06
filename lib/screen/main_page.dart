@@ -1,3 +1,4 @@
+import 'package:desafio_imc/screen/imc_hive_page.dart';
 import 'package:desafio_imc/screen/imc_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -53,7 +54,7 @@ class _MainpageState extends State<MainPage> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                    MaterialPageRoute(builder: (BuildContext context) => const ImcScreen())
+                    MaterialPageRoute(builder: (BuildContext context) => const ImcHivePage())
                     );
                   },
                   label:  Text('Calcular IMC'),
